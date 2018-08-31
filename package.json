@@ -1,0 +1,26 @@
+{
+  "name": "webpack-module-entry-from-cjs-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/webpack-module-entry-from-cjs-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andarist/webpack-module-entry-from-cjs-issue/issues"
+  },
+  "homepage": "https://github.com/Andarist/webpack-module-entry-from-cjs-issue#readme",
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "scripts": {
+    "build": "webpack src/index.js -o dist/index.js --mode development --devtool none"
+  }
+}
