@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack src/index.js -o dist/index.js --mode development --devtool none",
+    "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,10 @@
   },
   "homepage": "https://github.com/Andarist/webpack-module-entry-from-cjs-issue#readme",
   "devDependencies": {
+    "rollup": "^0.65.2",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.4.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
-  },
-  "scripts": {
-    "build": "webpack src/index.js -o dist/index.js --mode development --devtool none"
   }
 }
